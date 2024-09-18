@@ -1,23 +1,18 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+# @Time : 2020/8/26 14:48
+# @Author : way
+# @Site : 
+# @Describe:
 
 import json
-import pymysql
-from config import DB_CONFIG
-def get_db_connection():
-    conn = pymysql.connect(
-        host=DB_CONFIG['host'],
-        user=DB_CONFIG['user'],
-        password=DB_CONFIG['password'],
-        database=DB_CONFIG['database'],
-        port=DB_CONFIG['port'],
-        charset='utf8mb4'
-    )
-    return conn
+
 class SourceDataDemo:
 
     def __init__(self):
         self.title = '乘用车大数据分析'
-        self.counter = {'name': '2013年总销量', 'value': 12581189}
-        self.counter2 = {'name': '2013年总售额', 'value': 3912410}
+        self.counter = {'name': '2018年总收入情况', 'value': 12581189}
+        self.counter2 = {'name': '2018年总支出情况', 'value': 3912410}
         self.echart1_data = {
             'title': '行业分布',
             'data': [
@@ -86,7 +81,7 @@ class SourceDataDemo:
         self.echart5_data = {
             'title': '省份TOP',
             'data': [
-                {"name": "浙", "value": 2},
+                {"name": "浙江", "value": 2},
                 {"name": "上海", "value": 3},
                 {"name": "江苏", "value": 3},
                 {"name": "广东", "value": 9},
