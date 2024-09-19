@@ -37,3 +37,6 @@ python app.py;
 # 参考
 
 > https://gitee.com/lvyeyou/DaShuJuZhiDaPingZhanShi
+
+2024.9.19使用记录
+大屏中的数值都是写死的，单纯做演示还行，可能不够满足大部分的课设需求
